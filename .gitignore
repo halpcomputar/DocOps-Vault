@@ -19,6 +19,7 @@ raw/**/*
 
 # User/client data created after installation.
 it-operations/clients/*
+!it-operations/clients/README.md
 !it-operations/clients/_template/
 !it-operations/clients/_template/**
 daily/**/*
@@ -33,4 +34,3 @@ personal/systems/**/*
 !personal/systems/README.md
 personal/code-reviews/**/*
 !personal/code-reviews/README.md
-
