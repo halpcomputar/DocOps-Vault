@@ -24,6 +24,7 @@ Supported starter source types:
 - `reports`
 - `screenshots`
 - `site-photos`
+- `incidents`
 - `clippings`
 - `recordings`
 - `agent-sessions`
@@ -31,6 +32,7 @@ Supported starter source types:
 Notes:
 
 - `reports` means formal system-generated or vendor-generated reports, not a general dump folder.
+- `incidents` is a case-intake shortcut for known incident bundles, not a media type.
 - Rich media roots can act as inboxes. Client subfolders can be used when attribution is already known.
 - If a file sits directly under the source-type root and client attribution is unclear, the agent should ask.
 
@@ -96,6 +98,24 @@ Examples:
 - email -> project update or issue evidence
 - screenshot -> issue, incident evidence, application note, or infrastructure note
 - site photos -> infrastructure note, incident evidence, or project note
+- incident bundle -> client incident case file
+
+## Incident Intake
+
+Use `raw/incidents/` when the human already knows a group of files belongs to an incident.
+
+Recommended shape:
+
+`raw/incidents/<client-slug>/YYYY-MM-DD-<incident-slug>/`
+
+This folder can contain mixed source material: screenshots, emails, reports, logs, recordings, notes, or loose files. The folder path supplies the incident context; the ingest still classifies each file by source type when summarizing evidence.
+
+Important rules:
+
+- `raw/incidents/` is an explicit case-intake path, not an evidence media type.
+- Normal raw folders can still feed incidents when source-specific pipelines detect incident relevance.
+- Do not move files from normal raw folders into `raw/incidents/` just to make them "evidence"; the manifest records their role.
+- If a matching client or incident is unclear, ask before creating or merging an incident folder.
 
 ## New Source-Type Rule
 
@@ -118,4 +138,3 @@ It is not part of ingest classification and should not define where notes live.
 - [[VAULT]]
 - [[CONVENTIONS]]
 - [[_prompts/_ingest-pattern]]
-
