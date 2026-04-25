@@ -31,10 +31,11 @@ Before editing, read:
 - Incident ingest: follow `_prompts/incident-ingest.md`.
 - Screenshot ingest: follow `_prompts/screenshot-ingest.md`.
 - Site photo ingest: follow `_prompts/site-photo-ingest.md`.
+- Quicknote ingest: follow `_prompts/quicknote-ingest.md`.
+- Diagram ingest: follow `_prompts/diagram-ingest.md`.
 
 ## Out of Scope
 
 - Credentials belong in a password manager, not this vault.
 - External documentation publishing should be handled by a separate export pipeline.
 - This repo is a starter/template. Do not commit private client or source data.
-
