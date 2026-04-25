@@ -33,4 +33,9 @@ Destination-oriented workflows are allowed when they capture a recurring output 
 - `client-bootstrap.md`
 - `daily-process.md`
 
+Planned starter pipelines:
+
+- `quicknote-ingest.md`
+- `diagram-ingest.md`
+
 Add new prompts as source types become repeated enough to justify a contract.

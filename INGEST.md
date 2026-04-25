@@ -25,6 +25,8 @@ Supported starter source types:
 - `screenshots`
 - `site-photos`
 - `incidents`
+- `quicknotes`
+- `diagrams`
 - `clippings`
 - `recordings`
 - `agent-sessions`
@@ -33,6 +35,8 @@ Notes:
 
 - `reports` means formal system-generated or vendor-generated reports, not a general dump folder.
 - `incidents` is a case-intake shortcut for known incident bundles, not a media type.
+- `quicknotes` is mobile/on-the-go text capture that needs later routing.
+- `diagrams` covers rough sketches, network drawings, Excalidraw, draw.io, Lucidchart exports, PDFs, and similar visual planning/reference material.
 - Rich media roots can act as inboxes. Client subfolders can be used when attribution is already known.
 - If a file sits directly under the source-type root and client attribution is unclear, the agent should ask.
 
@@ -99,6 +103,8 @@ Examples:
 - screenshot -> issue, incident evidence, application note, or infrastructure note
 - site photos -> infrastructure note, incident evidence, or project note
 - incident bundle -> client incident case file
+- quicknote -> activity, project, issue, incident, standing note, personal event, or ignored
+- diagram -> infrastructure, application, project, incident evidence, location, or standing reference update
 
 ## Incident Intake
 
