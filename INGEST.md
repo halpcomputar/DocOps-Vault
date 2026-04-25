@@ -37,6 +37,7 @@ Notes:
 - `incidents` is a case-intake shortcut for known incident bundles, not a media type.
 - `quicknotes` is mobile/on-the-go text capture that needs later routing.
 - `diagrams` covers rough sketches, network drawings, Excalidraw, draw.io, Lucidchart exports, PDFs, and similar visual planning/reference material.
+- final diagrams still stay in `raw/diagrams/`; structured notes embed or link them and carry current/draft/superseded status.
 - Rich media roots can act as inboxes. Client subfolders can be used when attribution is already known.
 - If a file sits directly under the source-type root and client attribution is unclear, the agent should ask.
 
@@ -122,6 +123,23 @@ Important rules:
 - Normal raw folders can still feed incidents when source-specific pipelines detect incident relevance.
 - Do not move files from normal raw folders into `raw/incidents/` just to make them "evidence"; the manifest records their role.
 - If a matching client or incident is unclear, ask before creating or merging an incident folder.
+
+## Diagram Handling
+
+Use `raw/diagrams/` for rough and polished diagrams alike.
+
+Recommended shape:
+
+`raw/diagrams/<client-slug>/YYYY-MM-DD-<diagram-slug>/`
+
+Supported examples include Excalidraw files, draw.io / diagrams.net files, Lucidchart exports, PDFs, PNG/JPG/WebP exports, Mermaid files, and similar diagram sources.
+
+Important rules:
+
+- Do not copy a final diagram into `it-operations/clients/<client-slug>/infrastructure/` just because it is polished.
+- Embed or link the raw diagram from the structured note.
+- Put the current/draft/approximate/superseded status in the structured note.
+- Copies outside `raw/diagrams/` are deliverables or exports, not canonical source files.
 
 ## New Source-Type Rule
 
