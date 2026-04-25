@@ -1,0 +1,36 @@
+# Local operating-system noise
+.DS_Store
+Thumbs.db
+
+# Obsidian local state and plugin installations.
+# Keep plugin recommendations in docs instead of committing personal plugin data.
+.obsidian/workspace*.json
+.obsidian/plugins/
+.obsidian/themes/
+.obsidian/cache/
+.trash/
+
+# Source material is intentionally ignored in the public/template repo.
+# The folder contracts remain tracked through README files.
+raw/**/*
+!raw/**/
+!raw/**/README.md
+!raw/.ingest-manifest.json
+
+# User/client data created after installation.
+it-operations/clients/*
+!it-operations/clients/_template/
+!it-operations/clients/_template/**
+daily/**/*
+!daily/README.md
+personal/events/**/*
+!personal/events/README.md
+personal/projects/**/*
+!personal/projects/README.md
+personal/interests/**/*
+!personal/interests/README.md
+personal/systems/**/*
+!personal/systems/README.md
+personal/code-reviews/**/*
+!personal/code-reviews/README.md
+
